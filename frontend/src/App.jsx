@@ -9,6 +9,7 @@ import Footer from "./components/layouts/Footer";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import TemplatePreview from "./pages/TemplatePreview";
 
 export default function App() {
   return (
