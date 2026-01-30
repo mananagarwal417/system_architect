@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+.auth-input {
+  @apply w-full mb-4 p-3 rounded-lg bg-slate-800 text-white outline-none border border-slate-700;
+}
+
+.auth-btn {
+  @apply w-full py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition;
+}
