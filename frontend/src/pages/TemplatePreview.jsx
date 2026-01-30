@@ -31,7 +31,7 @@ export default function TemplatePreview() {
       </div>
 
       {/* The Canvas - Read Only Mode */}
-      <div className="flex-grow">
+      <div className="grow">
         <ReactFlow
           nodes={template.nodes}
           edges={template.edges}
