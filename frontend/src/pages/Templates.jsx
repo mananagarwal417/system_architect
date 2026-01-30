@@ -81,6 +81,7 @@ const templateData = [
 export default function Templates() {
   const navigate = useNavigate();
 
+
   return (
     <div className="pt-32 px-10 bg-slate-950 min-h-screen text-white">
       <h2 className="text-4xl font-extrabold mb-10 text-center bg-linear-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
@@ -91,7 +92,7 @@ export default function Templates() {
           <motion.div
             key={i}
             whileHover={{ scale: 1.02, y: -5 }}
-            onClick={() => navigate("/designer", { state: t })}
+            onClick={() => navigate("/preview", { state: t })}
             className="p-8 rounded-2xl bg-slate-900 border border-slate-800 cursor-pointer hover:border-indigo-500/50 transition-all shadow-2xl relative overflow-hidden group"
           >
             <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300" />

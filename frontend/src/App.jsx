@@ -10,7 +10,6 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 
-
 export default function App() {
   return (
     <div className="bg-slate-950 min-h-screen text-white ">
@@ -18,32 +17,32 @@ export default function App() {
 
       <main>
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route
-          path="/designer"
-          element={
-            <ProtectedRoute>
-              <Designer />
-            </ProtectedRoute>
-          }
-        />
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/designer"
+            element={
+              <ProtectedRoute>
+                <Designer />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/preview" element={<TemplatePreview />} />
+          <Route path="/templates" element={<Templates />} />
+          <Route
+            path="/designs"
+            element={
+              <ProtectedRoute>
+                <MyDesigns />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
 
-        <Route path="/templates" element={<Templates />} />
-        <Route
-  path="/designs"
-  element={
-    <ProtectedRoute>
-      <MyDesigns />
-    </ProtectedRoute>
-  }
-/>
-        <Route path="/login" element={<Login />} />
-<Route path="/signup" element={<Signup />} />
-
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
