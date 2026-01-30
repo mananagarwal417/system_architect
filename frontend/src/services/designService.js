@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/designs";
+const API = "https://system-architect.onrender.com/api/designs";
 
 const getToken = () => localStorage.getItem("token");
 

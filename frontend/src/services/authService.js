@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/auth";
+const API = "https://system-architect.onrender.com/api/auth";
 
 export const registerUser = async (data) => {
   const res = await fetch(`${API}/register`, {
