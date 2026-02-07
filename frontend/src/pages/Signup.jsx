@@ -9,11 +9,19 @@ export default function Signup() {
     email: "",
     password: "",
   });
+  
 
   const navigate = useNavigate();
 
  const handleSubmit = async (e) => {
   e.preventDefault();
+  
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    
+    if (!passwordRegex.test(form.password)) {
+      alert("Password must be at least 8 characters long, include an uppercase letter, a number, and a special character.");
+      return; // Stop the function here
+    }
 
   const res = await registerUser(form);
 
@@ -28,6 +36,8 @@ export default function Signup() {
     alert(res.message);
   }
 };
+
+
 
 
   return (

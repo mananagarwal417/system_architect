@@ -13,6 +13,13 @@ export default function Login() {
 
  const handleSubmit = async (e) => {
   e.preventDefault();
+  
+  const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    
+    if (!passwordRegex.test(form.password)) {
+      alert("Invalid password format. Please check your credentials.");
+      return; // Stop the function here
+    }
 
   const res = await loginUser(form);
 
