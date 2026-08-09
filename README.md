@@ -216,15 +216,6 @@ If you prefer Docker or a one-command setup, add a docker-compose file that brin
 
 ---
 
-## Suggested improvements to repo (quick wins)
-- Add a top-level README.md (this file) with API examples and screenshots.
-- Add Postman/HTTP collection for the API.
-- Provide a docker-compose for easy local setup (DB + backend).
-- Add tests for controllers and service-layer AI prompt construction.
-- Store AI prompts and settings in a configurable file to allow experimentation without code changes.
-
----
-
 ## Try asking
 - "Can you show the exact request body and response shape for POST /explain and include an example AI prompt used?"
 - "What fields are defined in backend/models/Architecture.js and what index(es) are set?"
